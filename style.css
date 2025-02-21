@@ -1,72 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@1,800&display=swap');
+@theme {
+  --font-red-hat: "Red Hat Display", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
 :root {
-    --black: #000000;
     --black25per: #00000025;
-    --white: #ffffff;
-    --grey: #f5f5f5;
 }
 
-.grid {
-    display: -ms-grid;
-    display: grid;
+.company-values {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(35%, #fff), color-stop(35%, #f5f5f5), to(#f5f5f5));
+    background: linear-gradient(to bottom, #fff 0, #fff 35%, #f5f5f5 35%, #f5f5f5 100%);
 }
 
-/*No. Across Columns*/
-.grid-col-temp-2 {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-col-temp-3 {
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-col-temp-4 {
-    -ms-grid-columns: (1fr)[4];
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.grid-col-temp-5 {
-    -ms-grid-columns: (1fr)[5];
-    grid-template-columns: repeat(5, 1fr);
-}
-
-/*Grid Gaps*/
-
-.grid-gap-01 {
-    grid-gap: 0.1rem;
-}
-.grid-gap-02 {
-    grid-gap: 0.2rem;
-}
-.grid-gap-03 {
-    grid-gap: 0.3rem;
-}
-.grid-gap-04 {
-    grid-gap: 0.4rem;
-}
-.grid-gap-05 {
-    grid-gap: 0.5rem;
-}
-.grid-gap-1 {
-    grid-gap: 1rem;
-}
-.grid-gap-15 {
-    grid-gap: 1.5rem;
-}
 
 /*Titles*/
-.site-title {
-    border-bottom: 1px dotted var(--black);
-    font-size: 1rem;
-}
-
 .letter {
-    font-size: 290px;
+    font-size: min(10vw, 290px);
     -webkit-box-shadow: 0 4px 4px var(--black25per);
     box-shadow: 0 4px 4px var(--black25per);
-    text-align: center;
-    font-style: italic;
-    -ms-flex-line-pack: center;
-    align-content: center;
+}
+
+.person-container:hover > .content {
+    display: block;
 }
