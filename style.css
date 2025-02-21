@@ -1,5 +1,6 @@
 :root {
     --black: #000000;
+    --black25per: #00000025;
     --white: #ffffff;
     --grey: #f5f5f5;
 }
@@ -13,8 +14,6 @@
 .grid-col-temp-2 {
     grid-template-columns: repeat(2, 1fr);
 }
-
-
 
 .grid-col-temp-3 {
     grid-template-columns: repeat(3, 1fr);
@@ -45,9 +44,25 @@
 .grid-gap-05 {
     grid-gap: 0.5rem;
 }
+.grid-gap-1 {
+    grid-gap: 1rem;
+}
+.grid-gap-15 {
+    grid-gap: 1.5rem;
+}
 
 /*Titles*/
 .site-title {
     border-bottom: 1px dotted var(--black);
     font-size: 1rem;
+}
+
+.letter {
+    font-size: 290px;
+    -webkit-box-shadow: 0 4px 4px var(--black25per);
+    box-shadow: 0 4px 4px var(--black25per);
+    text-align: center;
+    font-style: italic;
+    -ms-flex-line-pack: center;
+    align-content: center;
 }
