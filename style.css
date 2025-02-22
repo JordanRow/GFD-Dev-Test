@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@1,14..32&family=Red+Hat+Display:wght@300..900&display=swap');
+
+@import "tailwindcss";
 @theme {
   --font-red-hat: "Red Hat Display", sans-serif;
   --font-inter: "Inter", sans-serif;
+    --color-black-25: #00000025;
 }
 
 :root {
@@ -13,6 +16,24 @@
     background: linear-gradient(to bottom, #fff 0, #fff 35%, #f5f5f5 35%, #f5f5f5 100%);
 }
 
+.site-title {
+    font-family: 'Red Hat Display';
+}
+
+.container {
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.company-values > div > img {
+    width: 100%;
+}
+
+.ot-arrow-container button {
+    -webkit-box-shadow: 0 4px 4px var(--black25per);
+    box-shadow: 0 4px 4px var(--black25per);
+}
 
 /*Titles*/
 .letter {
