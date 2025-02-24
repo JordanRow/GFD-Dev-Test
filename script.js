@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var showDots = window.matchMedia("(max-width: 767px)").matches;
 
     $(".ot-container").slick({
-        mobileFirst:true,
+        mobileFirst: true,
         rows: 3,
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -30,14 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
             {
                 breakpoint: 767,
                 settings: {
-
                     slidesToShow: 5,
                     slidesToScroll: 5,
                     rows: 3,
-                    infinite: true,
+                    infinite: true
                 }
-            },
+            }
         ]
     });
-
 });
