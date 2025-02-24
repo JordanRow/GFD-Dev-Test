@@ -11,12 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    var showDots = window.matchMedia("(max-width: 767px)").matches;
+
     $(".ot-container").slick({
         mobileFirst:true,
-        rows: 2,
+        rows: 3,
         slidesToShow: 2,
         slidesToScroll: 1,
-        dots: true,
+        dots: showDots,
         arrows: true,
         appendArrows: $(".ot-arrow-container"),
         appendDots: $(".ot-dot-container"),
@@ -37,4 +39,5 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         ]
     });
+
 });

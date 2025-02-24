@@ -80,4 +80,46 @@
     .text-container .inner .content p {
         font-size: min(3vw,24px)
     }
+
+    .ot-arrow-container > button > svg {
+        height: 15px;
+    }
+
+    .ot-arrow-container > button > svg > path {
+        fill: #ffffff;
+    }
+
+    .ot-dot-container > ul {
+        position: relative;
+        bottom: 0;
+        text-align: left
+    }
+
+    .ot-dot-container > ul > li.slick-active button:before {
+        color: #666;
+    }
+
+    .ot-dot-container > ul > li {
+        margin: 0 3px;
+    }
+
+    .ot-dot-container > ul > li button:before {
+        font-size: 14px;
+        color: #000000;
+        opacity: 1
+    }
+
+    .our-team-container .slick-dotted.slick-slider {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .ot-dot-container > ul > li {
+        margin: 0;
+    }
+
+    .ot-dot-container > ul > li button:before {
+        font-size: 12px;
+    }
 }
